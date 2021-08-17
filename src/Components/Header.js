@@ -29,12 +29,13 @@ const Header = ({langCategory, setLangCategory, word, setWord}) => {
                         />
 
                         <TextField
+                            className='select'
                             id="standard-select-currency"
                             select
                             label="Select Language"
                             value={langCategory}
                             onChange={(e) => setLangCategory(e.target.value)}
-                            helperText="Please select your language"
+                            // helperText="Please select your language"
                             >
                     
                            {

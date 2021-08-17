@@ -1,5 +1,5 @@
 .title{
-    font-size: 3vw;
+    font-size: 6vw;
 }
 
 .header{
@@ -9,4 +9,24 @@
     flex-direction: column;
     height: 35vh;
     width: 100%;
+}
+
+@media (max-width:900px){
+    .header{
+        justify-content: space-evenly;
+        height: 25vh;
+    }
+    .title{
+        font-size: 7vw;
+    }
+}
+
+.inputs{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.search,.select {
+    width: 43%;
 }
