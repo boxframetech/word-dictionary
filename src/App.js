@@ -9,6 +9,8 @@ let dictionaryApiUrl = 'https://api.dictionaryapi.dev/api/v2/entries/en/duck'
 function App() {
 
   const [word,setWord] = useState('')
+  const [langCategory,setLangCategory] = useState('en')
+
 
   const [meanings,setMeanings] = useState([])
 
@@ -36,7 +38,7 @@ function App() {
   return (
     <div className="App">
      <Container maxWidth='md' className='d-flex'>
-        <Header/>
+        <Header langCategory={langCategory} setLangCategory={setLangCategory} word={word} setWord={setWord}/>
      </Container>
     </div>
   );
